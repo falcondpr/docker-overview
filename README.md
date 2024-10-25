@@ -70,3 +70,15 @@ In Docker, **images** and **containers** are two essential components, but they 
 - Containers can be **started, stopped, and removed** without affecting the original image. They provide isolation from other containers and the host system.
 
 In simple terms, think of an image as a **recipe**, and a container as the **prepared dish** made from that recipe. Images are static files, while containers are live, runnable environments based on those images.
+
+## Build Image
+
+```bash
+docker build -t node-app:1.0 .
+```
+
+## Run the project
+
+```bash
+docker run -d -p 3000:3000 node-app:1.0
+```
